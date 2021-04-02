@@ -20,10 +20,10 @@ export class ArticleEntity {
   @Column({default: ''})
   body: string;
 
-  @Column({ type: 'timestamp', default: () => "CURRENT_TIMESTAMP"})
+  @Column({ default: () => "CURRENT_TIMESTAMP"})
   created: Date;
 
-  @Column({ type: 'timestamp', default: () => "CURRENT_TIMESTAMP"})
+  @Column({ default: () => "CURRENT_TIMESTAMP"})
   updated: Date;
 
   @BeforeUpdate()
